@@ -10,15 +10,23 @@
 
 DHT_Unified dht(SENSOR, DHTTYPE);
 
+// WiFi credentials go here
+// ...
+// ...
+// ...
+
 void setup() {
+  // Setup pins
+  pinMode(LED, OUTPUT);
+  digitalWrite(LED, LOW);
+
   // Begin serial communication
   Serial.begin(9600);
   delay(100);
 
-  // Connect to WiFi
+  // begin the Blynk session
   // ...
-  
-  // Configure MQTT server
+  // ...
   // ...
 
   // Start listening to the DHT11
@@ -50,7 +58,9 @@ void setup() {
     relative_humidity_measure = event.relative_humidity;
   }
 
-  // Send data to the broker with MQTT
+  // Send data to Blynk
+  // ...
+  // ...
   // ...
 
   Serial.println("Going to sleep for 5 seconds...");
@@ -59,5 +69,5 @@ void setup() {
 }
 
 void loop() {
-  // Not needed anymore, the function is kept so Platformio does not complain.
+  // Not needed anymore, the function is kept so PlatformIO does not complain.
 }
