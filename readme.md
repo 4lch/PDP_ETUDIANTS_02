@@ -96,10 +96,15 @@ Une seule étape dans ce TP 😎
 ``` C
 #include <WiFi.h>
 #include <WiFiClient.h>
+
+//...
+
+// EN DESSOUS DES DEFINES POUR BLYNK_TEMPLATE ID, ETC
 #include <BlynkSimpleEsp32.h>
 
 #define BLYNK_PRINT Serial
 ```
+⚠️⚠️⚠️ `Vérifier que l'include de la bibliothèque Blynk est en-dessous des defines spécifiques à Blynk` ⚠️⚠️⚠️
 
 11. Avant le setup, définir les identifiants à utiliser pour le WiFi, et appeler la fonction pour démarrer la session Blynk au début du setup, après la connexion au port série.
 ``` C
