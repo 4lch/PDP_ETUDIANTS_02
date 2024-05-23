@@ -153,5 +153,6 @@ Blynk.syncVirtual(V2);
 1. Pensez à nettoyer le code si besoin 😇
 2.  `commit` le code si ce n'est pas déjà fait.
 3.  Tagguer le dernier commit à corriger avec "e1" avec la commande `git tag e1 HEAD`. Cette commande utilise "HEAD" comme référence au commit le plus récent.
-4.  Publier vos `commit` avec vos tags avec `git push origin --tags` (ou `git push --set-upstream origin etape_1 --tags` pour associer la branche sur le repo distant si c'est votre premier push sur cette branche)
+4.  Publier vos `commits` avec `git push -u origin etape_1`
+5.  Publier vos `tags` avec `git push origin --tags`
 ---
