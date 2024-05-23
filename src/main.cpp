@@ -4,11 +4,11 @@
 #include <DHT_U.h>
 
 // Define the pins that we will use
-#define SENSOR 33
+#define CAPTEUR 33
 #define LED 26
 #define DHTTYPE DHT11
 
-DHT_Unified dht(SENSOR, DHTTYPE);
+DHT_Unified dht(CAPTEUR, DHTTYPE);
 
 // WiFi credentials go here
 // ...
